@@ -27,3 +27,6 @@ EXPOSE 8080
 
 # Run the app
 ENTRYPOINT ["java", "-jar", "app.jar"]
+# ===== Build Stage =====#######
+#Docker File to create sample ## ===== Build Stage =====#######
+#Docker File to create sample #
