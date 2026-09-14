@@ -25,6 +25,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '11'
+          cache: maven
       - run: java --version
 
       - name: Compile
@@ -40,10 +41,12 @@ jobs:
         with:
           distribution: temurin
           java-version: '11'
+          cache: maven
       - run: java --version
 
       - name: Test
         run: mvn test
+       
 
   Build:
     runs-on: ubuntu-latest
@@ -58,6 +61,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '11'
+          cache: maven
       - run: java --version
 
       - name: Compile
