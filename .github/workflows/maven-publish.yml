@@ -16,7 +16,7 @@ on:
 jobs:
 
   compile:
-    runs-on: ubuntu-latest
+    runs-on: agent1
 
     steps:
       - name: checkout-Repo
@@ -33,7 +33,7 @@ jobs:
 
         
   Test:
-    runs-on: ubuntu-latest
+    runs-on: agent1
     needs: compile
     steps:
       - name: checkout-Repo
@@ -51,7 +51,7 @@ jobs:
        
 
   Build:
-    runs-on: ubuntu-latest
+    runs-on: agent1
     needs:
       - compile
       - Test
